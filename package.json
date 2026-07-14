@@ -1,0 +1,54 @@
+{
+  "name": "a11ymark",
+  "version": "0.1.0",
+  "description": "Accessibility linter for Markdown: alt-text quality, link text, heading structure and table headers — WCAG-derived content rules with a concrete fix hint for every finding, offline and dependency-free.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "a11ymark": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "markdown",
+    "linter",
+    "wcag",
+    "alt-text",
+    "documentation",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/a11ymark.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/a11ymark#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/a11ymark/issues"
+  }
+}
