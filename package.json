@@ -2,7 +2,7 @@
   "name": "a11ymark",
   "version": "0.1.0",
   "description": "Accessibility linter for Markdown: alt-text quality, link text, heading structure and table headers — WCAG-derived content rules with a concrete fix hint for every finding, offline and dependency-free.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
